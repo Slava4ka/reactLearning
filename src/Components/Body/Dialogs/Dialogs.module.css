@@ -1,0 +1,26 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    background-color: gainsboro;
+}
+
+.dialogItems {
+    padding: 10px;
+    background-color: gainsboro;
+}
+
+.dialogItems  a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.messages {
+    background-color: gainsboro;
+    padding: 35px 40px;
+    border-left: 1px solid black;
+}
+
+.dialogItem .active {
+    color: indianred;
+}
