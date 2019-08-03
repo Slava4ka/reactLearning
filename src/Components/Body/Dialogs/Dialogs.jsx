@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './Dialogs.module.css';
 import {NavLink} from "react-router-dom";
-import {createSendNewMessageAction, createUpdateNewMessageAction} from "../../../redux/redusers/dialogs-reduser";
 
 function DialogItem(props) {
     return (
@@ -24,14 +23,14 @@ function Dialogs(props) {
     const newMessageText = props.newMessageText;
 
     const onSendMessageClick = () => {
-        props.dispatch(createSendNewMessageAction());
+        props.sendMessage();
     };
 
     // альтернатива ref. e - объект событие
 
     const onNewMessageChange = (e) => {
         const messageCurrentText = e.target.value;
-        props.dispatch(createUpdateNewMessageAction(messageCurrentText));
+        props.newMessageChange(messageCurrentText);
     };
 
     return (

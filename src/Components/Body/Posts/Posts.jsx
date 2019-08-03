@@ -1,22 +1,20 @@
 import React from 'react';
 import style from './Posts.module.css';
 import Post from './Post'
-import {createAddPostAction, createUpdateNewPostAreaAction} from "../../../redux/redusers/posts-reduser";
-
-let newPostElement = React.createRef();
-
 
 function Posts(props) {
 
     debugger;
 
-    let addPost = () => {
-        props.dispatch(createAddPostAction());
-    };
+    let newPostElement = React.createRef();
+
+    function onAddPost() {
+        props.addPost();
+    }
 
     function onPostChange() {
-        const action = createUpdateNewPostAreaAction(newPostElement.current.value);
-        props.dispatch(action);
+        const text = newPostElement.current.value;
+        props.updateNewPostText(text);
     }
 
     return (
@@ -28,7 +26,7 @@ function Posts(props) {
             </div>
 
             <div>
-                <button onClick={addPost}>Add post</button>
+                <button onClick={onAddPost}>Add post</button>
             </div>
             <hr/>
             <div>
