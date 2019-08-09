@@ -27,7 +27,7 @@ function Posts(props) {
             </div>
             <hr/>
             <div>
-                {props.posts.map(el => <Post data={el}/>)}
+                {props.posts.map(el => <Post data={el} key={el.id}/>)}
             </div>
         </div>
     );

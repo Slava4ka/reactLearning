@@ -3,19 +3,18 @@ const UPDATE_NEW_POST_AREA = 'UPDATE-NEW-POST-AREA';
 
 function addPost(state) {
     const newPost = {id: state.posts.length + 1, message: state.newPostText, likesCount: 0};
-    let stateCopy = {...state};
-    stateCopy.posts = [...state.posts];
-    stateCopy.posts.push(newPost);
-    stateCopy.newPostText = '';
-    console.log(stateCopy);
-    return stateCopy;
-
+    return {
+        ...state,
+        posts: [...state.posts, newPost], // тут push
+        newPostText: ''
+    }
 }
 
 function updateNewPostText(state, newText) {
-    let stateCopy = {...state};
-    stateCopy.newPostText = newText;
-    return stateCopy;
+    return {
+        ...state,
+        newPostText: newText
+    };
 }
 
 let initialState = {
@@ -42,7 +41,7 @@ const postsReduser = (state = initialState, action) => {
     }
 };
 
-export const  createAddPostAction = () => {
+export const createAddPostAction = () => {
     return {type: ADD_POST}
 };
 

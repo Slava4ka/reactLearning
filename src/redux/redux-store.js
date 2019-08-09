@@ -12,4 +12,8 @@ let redusers = combineReducers(
 
 let store = createStore(redusers); // после этого создастся state с свойствами postPage и dialogsPage
 
+
+// потом убрать
+window.store = store;
+
 export default store
