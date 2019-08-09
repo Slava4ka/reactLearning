@@ -3,21 +3,14 @@ import * as serviceWorker from './serviceWorker';
 import store from './redux/redux-store'
 import ReactDOM from "react-dom";
 import App from "./Components/App";
+import {BrowserRouter} from "react-router-dom";
+import {Provider} from "react-redux";
 
-
-//Это хуета полнейшая, т.к. производительность страдает. После каждого изменения перерисовывется все!
-
-const rerenderEntireTree = (state) => {
-    ReactDOM.render(<App store={state}/>,
-
-        document.getElementById('root'));
-};
-
-rerenderEntireTree(store);
-
-store.subscribe(() => {
-        rerenderEntireTree(store);
-    }
-);
+ReactDOM.render(
+    <BrowserRouter>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </BrowserRouter>, document.getElementById('root'));
 
 serviceWorker.unregister();

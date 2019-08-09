@@ -3,9 +3,6 @@ import style from './Posts.module.css';
 import Post from './Post'
 
 function Posts(props) {
-
-    debugger;
-
     let newPostElement = React.createRef();
 
     function onAddPost() {

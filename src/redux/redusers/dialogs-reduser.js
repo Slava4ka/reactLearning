@@ -3,15 +3,19 @@ const SEND_MESSAGE = 'SEND-MESSAGE';
 
 
 const updateNewMessageText = (state, newMessage) => {
-    state.newMessageText = newMessage;
-    return state
+    let stateCopy = {...state};
+    stateCopy.newMessageText = newMessage;
+    return stateCopy;
 };
 
 function sendMessage(state) {
     const message = state.newMessageText;
-    state.newMessageText = '';
-    state.messages.push({id: state.messages.length + 1, message: message});
-    return state
+    const messageToState = {id: state.messages.length + 1, message: message};
+    let stateCopy = {...state};
+    stateCopy.messages = [...state.messages];
+    stateCopy.newMessageText = '';
+    stateCopy.messages.push(messageToState);
+    return stateCopy;
 }
 
 let initialState = {

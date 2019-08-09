@@ -20,7 +20,7 @@ function Message(props) {
 
 function Dialogs(props) {
 
-    const newMessageText = props.newMessageText;
+    const newMessageText = props.dialogsPage.newMessageText;
 
     const onSendMessageClick = () => {
         props.sendMessage();
@@ -37,12 +37,12 @@ function Dialogs(props) {
         <div className={style.dialogs}>
             <div className={style.dialogItems}>
                 {
-                    props.users.map(el => <DialogItem id={el.id} name={el.name}/>)
+                    props.dialogsPage.users.map(el => <DialogItem id={el.id} name={el.name} key={el.id}/>)
                 }
             </div>
             <div className={style.messages}>
                 {
-                    props.messages.map(el => <Message message={el.message}/>)
+                    props.dialogsPage.messages.map(el => <Message message={el.message} key={el.id}/>)
                 }
             </div>
 

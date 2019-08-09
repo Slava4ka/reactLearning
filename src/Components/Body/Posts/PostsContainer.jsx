@@ -1,25 +1,26 @@
 import React from 'react';
 import Posts from './Posts'
 import {createAddPostAction, createUpdateNewPostAreaAction} from "../../../redux/redusers/posts-reduser";
+import {connect} from "react-redux";
 
-function PostsContainer(props) {
-
-    const state = props.store.getState();
-
-    function addPost() {
-        props.store.dispatch(createAddPostAction());
+const mapStateToProps = (state) => {
+    return {
+        posts: state.postsPage.posts,
+        newPostText: state.postsPage.newPostText
     }
+};
 
-    function onPostChange(text) {
-        const action = createUpdateNewPostAreaAction(text);
-        props.store.dispatch(action);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        updateNewPostText: (text) => {
+            const action = createUpdateNewPostAreaAction(text);
+            dispatch(action);
+        },
+        addPost: () => {
+            dispatch(createAddPostAction());
+        }
     }
+};
 
-
-    return (
-        <Posts updateNewPostText={onPostChange} addPost={addPost} posts={state.postsPage.posts}
-              newPostText={state.postsPage.newPostText}/>
-    );
-}
-
+const PostsContainer = connect(mapStateToProps, mapDispatchToProps)(Posts);
 export default PostsContainer;
