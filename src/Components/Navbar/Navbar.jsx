@@ -20,6 +20,10 @@ function Navbar() {
             <div className={style.item}>
                 <NavLink to={'/posts'} activeClassName={style.activeLink}>Posts</NavLink>
             </div>
+
+            <div className={style.item}>
+                <NavLink to={'/users'} activeClassName={style.activeLink}>Users</NavLink>
+            </div>
         </nav>
     )
 }
