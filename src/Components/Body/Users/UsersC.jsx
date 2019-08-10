@@ -1,19 +1,31 @@
 import React from 'react';
-import styles from './Users.module.css'
+import styles from "./Users.module.css";
 import * as axios from "axios";
 
-const Users = (props) => {
+class Users extends React.Component {
 
-    if (props.users.length === 0) {
+    /*
+    constructor(props) {
         axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
-            props.setUsers(response.data.items)
+            alert("status " + response.status);
+            this.props.setUsers(response.data.items)
+        });
+        super(props)
+    }
+*/
+
+    componentDidMount() {
+        axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
+            alert("status " + response.status);
+            this.props.setUsers(response.data.items)
         });
     }
 
-    return (
-        <div>
+
+    render() {
+        return <div>
             {
-                props.users.map(u =>
+                this.props.users.map(u =>
                     <div key={u.id}>
                         <span>
                             <div>
@@ -25,11 +37,11 @@ const Users = (props) => {
                             <div>
                                 {u.followed ? <button onClick={
                                     () => {
-                                        props.unfollow(u.id)
+                                        this.props.unfollow(u.id)
                                     }
                                 }>Unfollow</button> : <button onClick={
                                     () => {
-                                        props.follow(u.id)
+                                        this.props.follow(u.id)
                                     }
                                 }>Follow</button>}
                             </div>
@@ -43,7 +55,7 @@ const Users = (props) => {
                     </div>
                 )}
         </div>
-    )
-};
+    }
+}
 
-export default Users;
+export default Users
