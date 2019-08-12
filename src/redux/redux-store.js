@@ -2,13 +2,15 @@ import {combineReducers, createStore} from "redux";
 import postsReduser from "./redusers/posts-reduser";
 import dialogsReduser from "./redusers/dialogs-reduser";
 import usersReduser from "./redusers/users-reduser";
+import profileReduser from "./redusers/profile-reduser";
 
 
 let redusers = combineReducers(
     {
         postsPage: postsReduser, //каждому свойтву из store соответствуеь свой редьюсер
         dialogsPage: dialogsReduser,
-        usersPage: usersReduser
+        usersPage: usersReduser,
+        profilePage: profileReduser
     }
 );
 

@@ -2,7 +2,6 @@ import React from 'react';
 import * as axios from 'axios';
 import Users from './Users';
 import Preloader from "../../common/Preloader/Preloader";
-import {setToggleFetching} from "../../../redux/redusers/users-reduser";
 
 class UsersApiComponent extends React.Component {
 

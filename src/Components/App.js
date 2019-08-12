@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import Header from '../Components/Header/Header';
 import Navbar from '../Components/Navbar/Navbar';
-import Profile from '../Components/Body/Profile/Profile';
 import News from "../Components/Body/News/News";
 import {Route} from "react-router-dom";
 import PostsContainer from "./Body/Posts/PostsContainer";
 import DialogsContainer from "./Body/Dialogs/DialogsContainer";
 import UsersContainer from "./Body/Users/UsersContainer";
+import ProfileContainer from "./Body/Profile/ProfileContainer";
 
 function App() {
     return (
@@ -19,7 +19,7 @@ function App() {
                        render={() => (<DialogsContainer/>)}/>
 
                 <Route path={'/profile'}
-                       component={Profile}/>
+                       render={() => (<ProfileContainer/>)}/>
 
                 <Route path={'/news'}
                        component={News}/>
@@ -28,7 +28,7 @@ function App() {
                        render={() => (<PostsContainer/>)}/>
 
                 <Route path={'/users'}
-                       render={() => (<UsersContainer />)}/>
+                       render={() => (<UsersContainer/>)}/>
             </div>
         </div>
     );
