@@ -1,20 +1,29 @@
 import React from 'react';
 import styles from './Users.module.css'
-import * as axios from "axios";
 
 const Users = (props) => {
 
-    if (props.users.length === 0) {
-        axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
-            props.setUsers(response.data.items)
-        });
+    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
+
+    let pages = [];
+
+    for (let i = 1; i <= pagesCount; i++) {
+        pages.push(i)
     }
 
-    return (
-        <div>
-            {
-                props.users.map(u =>
-                    <div key={u.id}>
+    return <div>
+        <div className={styles.pagination}>
+            {pages.map(p => {
+                return <span onClick={(e) => {
+                    props.onPageChanged(p)
+
+                }} className={props.currentPage === p ? styles.selectedPage : ''}
+                             key={p}>{p}</span>
+            })}
+        </div>
+        {
+            props.users.map(u =>
+                <div key={u.id} className={styles.card}>
                         <span>
                             <div>
                                 <img
@@ -34,16 +43,17 @@ const Users = (props) => {
                                 }>Follow</button>}
                             </div>
                         </span>
-                        <span>
+                    <span>
                             <span>
                                 <div>{u.name}</div>
                                 <div>{u.status}</div>
+                                <div>{u.id}</div>
                             </span>
                         </span>
-                    </div>
-                )}
-        </div>
-    )
+                </div>
+            )}
+    </div>
+
 };
 
 export default Users;
