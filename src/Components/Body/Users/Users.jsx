@@ -53,7 +53,6 @@ const Users = (props) => {
                 </div>
             )}
     </div>
-
 };
 
 export default Users;

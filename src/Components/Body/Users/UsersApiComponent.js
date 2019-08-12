@@ -2,13 +2,14 @@ import React from 'react';
 import * as axios from 'axios';
 import Users from './Users';
 import Preloader from "../../common/Preloader/Preloader";
+import {setToggleFetching} from "../../../redux/redusers/users-reduser";
 
 class UsersApiComponent extends React.Component {
 
     componentDidMount = () => {
-        this.props.toggleIsFetching(true);
+        this.props.setToggleFetching(true);
         axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`).then(response => {
-            this.props.toggleIsFetching(false);
+            this.props.setToggleFetching(false);
             this.props.setUsers(response.data.items);
             this.props.setUsersTotalCount(response.data.totalCount);
         });
@@ -16,9 +17,9 @@ class UsersApiComponent extends React.Component {
 
     onPageChanged = (pageNumber) => {
         this.props.setCurrentPage(pageNumber);
-        this.props.toggleIsFetching(true);
+        this.props.setToggleFetching(true);
         axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`).then(response => {
-            this.props.toggleIsFetching(false);
+            this.props.setToggleFetching(false);
             this.props.setUsers(response.data.items)
         });
     };
@@ -40,10 +41,7 @@ class UsersApiComponent extends React.Component {
                    isFetching={this.props.isFetching}
             />
         </>
-
     }
-
 }
-
 
 export default UsersApiComponent;
