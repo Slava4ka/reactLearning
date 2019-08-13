@@ -3,6 +3,7 @@ import postsReduser from "./redusers/posts-reduser";
 import dialogsReduser from "./redusers/dialogs-reduser";
 import usersReduser from "./redusers/users-reduser";
 import profileReduser from "./redusers/profile-reduser";
+import authReduser from "./redusers/auth-reduser";
 
 
 let redusers = combineReducers(
@@ -10,7 +11,8 @@ let redusers = combineReducers(
         postsPage: postsReduser, //каждому свойтву из store соответствуеь свой редьюсер
         dialogsPage: dialogsReduser,
         usersPage: usersReduser,
-        profilePage: profileReduser
+        profilePage: profileReduser,
+        auth: authReduser
     }
 );
 

@@ -4,7 +4,6 @@ import Preloader from "../../common/Preloader/Preloader";
 
 function Profile(props) {
 
-
     console.log(props);
     if (!props.profile) {
         return <Preloader/>
@@ -17,7 +16,8 @@ function Profile(props) {
 
                         <div>
                             <ul>
-                                {Object.keys(props.profile.contacts).map(a => <li>{a}</li>)}
+                                {Object.values(props.profile.contacts).map((a, index) => a != null ?
+                                    <li key={index}>{a}</li> : '')}
                             </ul>
                         </div>
 
