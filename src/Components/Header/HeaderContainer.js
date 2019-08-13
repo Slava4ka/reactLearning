@@ -35,7 +35,6 @@ const mapStateToProps = (state) => ({
     email: state.auth.email,
     login: state.auth.login,
     avatar: state.auth.avatar,
-    loginLabel: state.auth.loginLabel
 });
 
 export default connect(mapStateToProps, {setAuthUserData, setUsersAvatar})(HeaderContainer)

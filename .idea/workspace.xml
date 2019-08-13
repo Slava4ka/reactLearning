@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6752ba4b-1fc9-4138-a737-96288ba32160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redusers/users-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/users-reduser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersApiComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/UsersApiComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersC.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +102,7 @@
       <workItem from="1565563122625" duration="4747000" />
       <workItem from="1565609072752" duration="11217000" />
       <workItem from="1565621839647" duration="4612000" />
-      <workItem from="1565646071504" duration="10522000" />
+      <workItem from="1565646071504" duration="12919000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,6 @@ import React from "react";
 
 const SET_USER_DATA = 'SET-USER-DATA';
 const SET_USERS_AVATAR = 'SET-USERS-AVATAR';
-const SET_AVATAR = 'SET-AVATAR';
 
 let initialState = {
     userId: null,
@@ -23,7 +22,6 @@ const authReduser = (state = initialState, action) => {
         case SET_USERS_AVATAR: {
             return {...state, avatar: action.avatar}
         }
-
 
         default:
             return state
