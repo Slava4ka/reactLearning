@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import {getProfile} from '../../../redux/redusers/profile-reduser'
 import Profile from "./Profile";
 import Preloader from "../../common/Preloader/Preloader";
-import {withRouter} from "react-router-dom";
+import {Redirect, withRouter} from "react-router-dom";
 
 class ProfileContainer extends React.Component {
 
@@ -13,18 +13,21 @@ class ProfileContainer extends React.Component {
     }
 
     render() {
-        return (
-            <>
-                {this.props.isFetching === true ? <Preloader/> : null}
-                <Profile {...this.props}/>
-            </>
-        )
+
+        if (!this.props.isAuth) return <Redirect to={'/login'} />;
+            return (
+                <>
+                    {this.props.isFetching === true ? <Preloader/> : null}
+                    <Profile {...this.props}/>
+                </>
+            )
     }
 
 }
 
 const mapStateToProps = (state) => ({
-    profile: state.profilePage.profile
+    profile: state.profilePage.profile,
+    isAuth: state.auth.isAuth
 });
 
 const withUrlDataContainerComponent = withRouter(ProfileContainer); // Это как третий контейнер (для аякса, для редакса, для взаимодействия с урлом)

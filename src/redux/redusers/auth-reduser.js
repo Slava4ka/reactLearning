@@ -37,6 +37,7 @@ export const authorization = (params) => {
     return (dispatch) => {
         userApi.authMe().then(data => {
             if (data.resultCode === 0) {
+                console.log(data);
                 dispatch(setAuthUserData(data.data.id, data.data.email, data.data.login));
                 userApi.getProfile(data.data.id).then(profileData => {
                     if (profileData.photos.small) {

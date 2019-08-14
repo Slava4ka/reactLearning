@@ -25,7 +25,7 @@ export const userApi = {
 
     // убрать пользователя из "друзей"
     unfollow(id) {
-        return instance.delete(`https://social-network.samuraijs.com/api/1.0/follow/${id}`)
+        return instance.delete(`follow/${id}`)
     },
 
     // получить всю информацию о указаному пользователю
@@ -37,7 +37,7 @@ export const userApi = {
 
     // узнать  информацию о текущем пользователе / авторизоваться
     authMe() {
-        return instance.get('https://social-network.samuraijs.com/api/1.0/auth/me', {withCredentials: true}).then(response => {
+        return instance.get('auth/me', {withCredentials: true}).then(response => {
             return response.data
         });
     }

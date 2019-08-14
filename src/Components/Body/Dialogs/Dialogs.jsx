@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Dialogs.module.css';
-import {NavLink} from "react-router-dom";
+import {NavLink, Redirect} from "react-router-dom";
 
 function DialogItem(props) {
     return (
@@ -32,6 +32,8 @@ function Dialogs(props) {
         const messageCurrentText = e.target.value;
         props.newMessageChange(messageCurrentText);
     };
+
+    if(!props.isAuth) return <Redirect to={'/login'} />;
 
     return (
         <div className={style.dialogs}>
