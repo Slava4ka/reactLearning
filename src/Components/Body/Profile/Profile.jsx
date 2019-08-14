@@ -4,7 +4,6 @@ import Preloader from "../../common/Preloader/Preloader";
 
 function Profile(props) {
 
-    console.log(props);
     if (!props.profile) {
         return <Preloader/>
     } else {

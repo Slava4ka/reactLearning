@@ -1,3 +1,5 @@
+import {userApi} from "../../api/api";
+
 const SET_USERS_PROFILE = "SET-USERS-PROFILE";
 const TOGGLE_IS_FETCHING = "TOGGLE-IS-FETCHING";
 
@@ -23,7 +25,18 @@ function profileReduser(state = initalState, action) {
     }
 }
 
-export const setProfileInfo = (profile) => ({type: SET_USERS_PROFILE, profile});
-export const setToggleFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
+const setProfileInfo = (profile) => ({type: SET_USERS_PROFILE, profile});
+const setToggleFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
+
+export const getProfile = (userId) => {
+    return (dispatch) => {
+        dispatch(setToggleFetching(true));
+        userApi.getProfile(userId).then(data => {
+            dispatch(setToggleFetching(false));
+            dispatch(setProfileInfo(data));
+        });
+    }
+};
+
 
 export default profileReduser;

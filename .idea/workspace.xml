@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6752ba4b-1fc9-4138-a737-96288ba32160" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Slava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/Users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersApiComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/UsersApiComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersC.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/profile-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/profile-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/users-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/users-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +53,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -102,7 +113,9 @@
       <workItem from="1565563122625" duration="4747000" />
       <workItem from="1565609072752" duration="11217000" />
       <workItem from="1565621839647" duration="4612000" />
-      <workItem from="1565646071504" duration="12919000" />
+      <workItem from="1565646071504" duration="18293000" />
+      <workItem from="1565712665238" duration="10048000" />
+      <workItem from="1565773047719" duration="8377000" />
     </task>
     <servers />
   </component>
