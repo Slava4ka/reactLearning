@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6752ba4b-1fc9-4138-a737-96288ba32160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Login/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Dialogs/DialogsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +103,9 @@
       <workItem from="1565621839647" duration="4612000" />
       <workItem from="1565646071504" duration="18293000" />
       <workItem from="1565712665238" duration="10048000" />
-      <workItem from="1565773047719" duration="12640000" />
+      <workItem from="1565773047719" duration="15350000" />
+      <workItem from="1565852531817" duration="449000" />
+      <workItem from="1565949442099" duration="2406000" />
     </task>
     <servers />
   </component>
