@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './Users.module.css';
 import {NavLink} from "react-router-dom";
-import * as axios from 'axios';
-import {userApi} from "../../../api/api";
 
 const Users = (props) => {
 

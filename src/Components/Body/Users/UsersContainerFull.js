@@ -1,11 +1,13 @@
 import React from 'react';
 import Users from './Users';
 import Preloader from "../../common/Preloader/Preloader";
-
+import {follow, unfollow, getUsers} from "../../../redux/redusers/users-reduser";
+import {compose} from "redux";
+import {connect} from "react-redux";
+import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
 
 
 class UsersApiComponent extends React.Component {
-
 
     componentDidMount = () => {
         this.props.getUsers(this.props.currentPage, this.props.pageSize);
@@ -32,4 +34,17 @@ class UsersApiComponent extends React.Component {
     }
 }
 
-export default UsersApiComponent;
+const mapStateToProps = (state) => {
+    return {
+        users: state.usersPage.users,
+        pageSize: state.usersPage.pageSize,
+        totalUsersCount: state.usersPage.totalUsersCount,
+        currentPage: state.usersPage.currentPage,
+        isFetching: state.usersPage.isFetching,
+        followingInProgress: state.usersPage.followingInProgress,
+        myId: state.auth.userId
+    }
+};
+
+export default compose(connect(mapStateToProps, {follow, unfollow, getUsers}), withAuthRedirect)
+(UsersApiComponent)

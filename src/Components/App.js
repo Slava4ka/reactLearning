@@ -6,7 +6,7 @@ import {Route} from "react-router-dom";
 import HeaderContainer from '../Components/Header/HeaderContainer';
 import PostsContainer from "./Body/Posts/PostsContainer";
 import DialogsContainer from "./Body/Dialogs/DialogsContainer";
-import UsersContainer from "./Body/Users/UsersContainer";
+import UsersContainer from "./Body/Users/UsersContainerFull";
 import ProfileContainer from "./Body/Profile/ProfileContainer";
 import Login from "./Body/Login/Login";
 
