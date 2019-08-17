@@ -28,17 +28,27 @@ export const userApi = {
         return instance.delete(`follow/${id}`)
     },
 
-    // получить всю информацию о указаному пользователю
-    getProfile(id) {
-        return instance.get(`profile/${id}`).then(response => {
-            return response.data
-        })
-    },
-
     // узнать  информацию о текущем пользователе / авторизоваться
     authMe() {
         return instance.get('auth/me', {withCredentials: true}).then(response => {
             return response.data
         });
+    }
+};
+
+export const profileAPI = {
+    getProfile(userId) {
+        return instance.get(`profile/${userId}`).then(responce => {
+            return responce.data
+        })
+    },
+    getStatus(userId) {
+        return instance.get(`profile/status/${userId}`).then(responce => {
+            return responce.data
+        })
+    },
+
+    updateStatus(status){
+        return instance.put(`profile/status`,{status: status});
     }
 };

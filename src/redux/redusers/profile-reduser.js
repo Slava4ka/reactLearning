@@ -1,11 +1,13 @@
-import {userApi} from "../../api/api";
+import {profileAPI} from "../../api/api";
 
 const SET_USERS_PROFILE = "SET-USERS-PROFILE";
 const TOGGLE_IS_FETCHING = "TOGGLE-IS-FETCHING";
+const SET_STATUS = 'SET-STATUS';
 
 let initalState = {
     profile: null,
-    isFetching: true
+    isFetching: true,
+    status: ''
 };
 
 function profileReduser(state = initalState, action) {
@@ -18,6 +20,9 @@ function profileReduser(state = initalState, action) {
             return {...state, isFetching: action.isFetching}
         }
 
+        case SET_STATUS: {
+            return {...state, status: action.status}
+        }
         default: {
             return state
         }
@@ -27,16 +32,28 @@ function profileReduser(state = initalState, action) {
 
 const setProfileInfo = (profile) => ({type: SET_USERS_PROFILE, profile});
 const setToggleFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
+const setStatus = (status) => ({type: SET_STATUS, status});
 
 export const getProfile = (userId) => {
     return (dispatch) => {
         dispatch(setToggleFetching(true));
-        userApi.getProfile(userId).then(data => {
+        profileAPI.getProfile(userId).then(data => {
             dispatch(setToggleFetching(false));
             dispatch(setProfileInfo(data));
         });
     }
 };
 
+export const getStatus = (userId) => (dispach) => {
+    profileAPI.getStatus(userId).then(status => dispach(setStatus(status)));
+};
+
+export const updateStatus = (status) => (dispach) => {
+    profileAPI.updateStatus(status).then(responce => {
+        if (responce.data.resultCode === 0) {
+            dispach(setStatus(status)) ;
+        }
+    });
+};
 
 export default profileReduser;

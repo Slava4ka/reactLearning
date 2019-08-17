@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6752ba4b-1fc9-4138-a737-96288ba32160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainerFull.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/News/NewsContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileStatu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersApiComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/UsersApiComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainerFull.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/profile-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/profile-reduser.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Body/Profile" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
@@ -46,13 +51,15 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components\Body\Profile" />
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\hoc" />
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\assets\images" />
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components\Body\Dialogs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\redux\redusers" />
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\assets\images" />
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components\Body\Dialogs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -107,7 +114,8 @@
       <workItem from="1565712665238" duration="10048000" />
       <workItem from="1565773047719" duration="15350000" />
       <workItem from="1565852531817" duration="449000" />
-      <workItem from="1565949442099" duration="4169000" />
+      <workItem from="1565949442099" duration="13765000" />
+      <workItem from="1565972023140" duration="11636000" />
     </task>
     <servers />
   </component>

@@ -6,8 +6,7 @@ import {compose} from "redux";
 import {connect} from "react-redux";
 import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
 
-
-class UsersApiComponent extends React.Component {
+class UsersComponent extends React.Component {
 
     componentDidMount = () => {
         this.props.getUsers(this.props.currentPage, this.props.pageSize);
@@ -46,5 +45,6 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default compose(connect(mapStateToProps, {follow, unfollow, getUsers}), withAuthRedirect)
-(UsersApiComponent)
+
+export default compose(connect(mapStateToProps, {follow, unfollow, getUsers}),
+    withAuthRedirect)(UsersComponent)

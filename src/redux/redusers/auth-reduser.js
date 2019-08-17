@@ -1,5 +1,5 @@
 import React from "react";
-import {userApi} from "../../api/api";
+import {userApi, profileAPI} from "../../api/api";
 
 const SET_USER_DATA = 'SET-USER-DATA';
 const SET_USERS_AVATAR = 'SET-USERS-AVATAR';
@@ -30,16 +30,16 @@ const authReduser = (state = initialState, action) => {
     }
 };
 
-export const setAuthUserData = (userId, email, login) => ({type: SET_USER_DATA, data: {userId, email, login}});
-export const setUsersAvatar = (avatar) => ({type: SET_USERS_AVATAR, avatar});
+const setAuthUserData = (userId, email, login) => ({type: SET_USER_DATA, data: {userId, email, login}});
+const setUsersAvatar = (avatar) => ({type: SET_USERS_AVATAR, avatar});
 
-export const authorization = (params) => {
+export const authorization = () => {
     return (dispatch) => {
         userApi.authMe().then(data => {
             if (data.resultCode === 0) {
                 console.log(data);
                 dispatch(setAuthUserData(data.data.id, data.data.email, data.data.login));
-                userApi.getProfile(data.data.id).then(profileData => {
+                profileAPI.getProfile(data.data.id).then(profileData => {
                     if (profileData.photos.small) {
                         dispatch(setUsersAvatar(<img src={profileData.photos.small} alt={"small avatar"}/>));
                     } else {
