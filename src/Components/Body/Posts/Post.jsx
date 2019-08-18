@@ -4,7 +4,10 @@ function Post(props) {
     return(
         <div>
             <span>{props.data.message}</span>
-            <span>{props.data.likesCount}</span>
+            <br/>
+            <span>Likes: {props.data.likesCount}</span>
+            <br/>
+            <br/>
         </div>
     )
 }
