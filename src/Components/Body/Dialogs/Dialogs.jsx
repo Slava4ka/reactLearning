@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Dialogs.module.css';
-import {NavLink, Redirect} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import {reduxForm, Field} from 'redux-form';
 
 function DialogItem(props) {
     return (
@@ -20,20 +21,10 @@ function Message(props) {
 
 function Dialogs(props) {
 
-    const newMessageText = props.dialogsPage.newMessageText;
-
-    const onSendMessageClick = () => {
-        props.sendMessage();
+    // сюда будет приходить из Field при клике
+    const addNewMessage = (values) => {
+        props.sendMessage(values.newMessageBody);
     };
-
-    // альтернатива ref. e - объект событие
-
-    const onNewMessageChange = (e) => {
-        const messageCurrentText = e.target.value;
-        props.newMessageChange(messageCurrentText);
-    };
-
-    if(!props.isAuth) return <Redirect to={'/login'} />;
 
     return (
         <div className={style.dialogs}>
@@ -47,18 +38,27 @@ function Dialogs(props) {
                     props.dialogsPage.messages.map(el => <Message message={el.message} key={el.id}/>)
                 }
             </div>
-
             <div>
-                <div>
-                    <textarea value={newMessageText} onChange={onNewMessageChange} placeholder={'Enter your message'}/>
-                </div>
-                <div>
-                    <button onClick={onSendMessageClick}>Send</button>
-                </div>
+                <AddMessageFormRedux onSubmit={addNewMessage}/>
             </div>
         </div>
     )
 }
 
+const AddMessageForm = (props) => {
+    return (
+        <form onSubmit={props.handleSubmit}>
+            <div>
+                <Field component={'textarea'} name={'newMessageBody'} placeholder={'Enter your message'}/>
+            </div>
+            <div>
+                <button>Send</button>
+            </div>
+        </form>
+    )
+};
+
+// это обертка, без которой поле Field работать не будет
+const AddMessageFormRedux = reduxForm({form: 'dialogAddMessageForm'})(AddMessageForm);
 
 export default Dialogs;

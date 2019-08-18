@@ -5,7 +5,7 @@ import usersReduser from "./redusers/users-reduser";
 import profileReduser from "./redusers/profile-reduser";
 import authReduser from "./redusers/auth-reduser";
 import thunkMiddleware from 'redux-thunk';
-
+import {reducer as formReducer} from 'redux-form'
 
 let redusers = combineReducers(
     {
@@ -13,11 +13,12 @@ let redusers = combineReducers(
         dialogsPage: dialogsReduser,
         usersPage: usersReduser,
         profilePage: profileReduser,
-        auth: authReduser
+        auth: authReduser,
+        form: formReducer
     }
 );
 
-let store = createStore(redusers, applyMiddleware(thunkMiddleware)); // после этого создастся state с свойствами postPage и dialogsPage
+let store = createStore(redusers, applyMiddleware(thunkMiddleware)); // после этого создастся state с свойствами postPage и dialogsPage...
 
 
 // потом убрать

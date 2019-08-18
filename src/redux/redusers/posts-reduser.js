@@ -1,8 +1,7 @@
 const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_AREA = 'UPDATE-NEW-POST-AREA';
 
-function addPost(state) {
-    const newPost = {id: state.posts.length + 1, message: state.newPostText, likesCount: 0};
+function addPost(state, action) {
+    const newPost = {id: state.posts.length + 1, message: action.newPostText, likesCount: 0};
     return {
         ...state,
         posts: [...state.posts, newPost], // тут push
@@ -25,28 +24,20 @@ let initialState = {
         {id: 4, message: "Jololo", likesCount: 34},
         {id: 5, message: "fap fpa", likesCount: 87},
     ],
-    newPostText: 'some new text',
 };
 
 const postsReduser = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST:
-            return addPost(state);
-
-        case UPDATE_NEW_POST_AREA:
-            return updateNewPostText(state, action.newText);
+            return addPost(state, action);
 
         default:
             return state;
     }
 };
 
-export const createAddPostAction = () => {
-    return {type: ADD_POST}
-};
-
-export const createUpdateNewPostAreaAction = (newText) => {
-    return {type: UPDATE_NEW_POST_AREA, newText: newText}
+export const createAddPostAction = (newPostText) => {
+    return {type: ADD_POST, newPostText}
 };
 
 export default postsReduser;

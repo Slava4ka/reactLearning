@@ -1,30 +1,34 @@
 import React from 'react';
 import style from './Posts.module.css';
-import Post from './Post'
+import Post from './Post';
+import {Field, reduxForm} from "redux-form";
+
+function AddNewPostForm(props) {
+    return <form onSubmit={props.handleSubmit}>
+        <div>
+            <Field name={'newPostText'} component={'textarea'}/>
+        </div>
+
+        <div>
+            <button>Add post</button>
+        </div>
+    </form>;
+}
+
+const AddNewPostFormRedux = reduxForm({form: 'AddNewPostForm'})(AddNewPostForm);
 
 function Posts(props) {
-    let newPostElement = React.createRef();
 
-    function onAddPost() {
-        props.addPost();
-    }
-
-    function onPostChange() {
-        const text = newPostElement.current.value;
-        props.updateNewPostText(text);
+    function onAddPost(values) {
+        props.addPost(values.newPostText);
     }
 
     return (
         <div className={style.postsBody}>
             <h3>Posts</h3>
 
-            <div>
-                <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText}/>
-            </div>
+            <AddNewPostFormRedux onSubmit={onAddPost}/>
 
-            <div>
-                <button onClick={onAddPost}>Add post</button>
-            </div>
             <hr/>
             <div>
                 {props.posts.map(el => <Post data={el} key={el.id}/>)}
@@ -32,5 +36,6 @@ function Posts(props) {
         </div>
     );
 }
+
 
 export default Posts;

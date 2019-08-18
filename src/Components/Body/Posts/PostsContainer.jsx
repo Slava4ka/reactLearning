@@ -1,6 +1,6 @@
 import React from 'react';
 import Posts from './Posts'
-import {createAddPostAction, createUpdateNewPostAreaAction} from "../../../redux/redusers/posts-reduser";
+import {createAddPostAction} from "../../../redux/redusers/posts-reduser";
 import {connect} from "react-redux";
 
 const mapStateToProps = (state) => {
@@ -12,12 +12,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        updateNewPostText: (text) => {
-            const action = createUpdateNewPostAreaAction(text);
-            dispatch(action);
-        },
-        addPost: () => {
-            dispatch(createAddPostAction());
+        addPost: (newPostText) => {
+            dispatch(createAddPostAction(newPostText));
         }
     }
 };
