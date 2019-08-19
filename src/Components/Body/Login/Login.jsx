@@ -4,25 +4,31 @@ import style from './Login.module.css';
 import {Input} from "../../common/FormsControls/FormsControls";
 import {requiredField} from "../../../utils/validators/validator";
 import {connect} from "react-redux";
-import {login, logOut} from "../../../redux/redusers/auth-reduser";
+import {login} from "../../../redux/redusers/auth-reduser";
 import {Redirect} from "react-router-dom";
 
 const LoginForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit}>
-            <div>
+            <div className={style.dwsInput}>
                 <Field placeholder={"Login/Email"} name={'email'} component={Input} type={'email'}
                        validate={[requiredField]}/>
             </div>
-            <div>
+            <div className={style.dwsInput}>
                 <Field placeholder={"Password"} name={'password'} component={Input} type={'password'}
                        validate={[requiredField]}/>
             </div>
             <div>
                 <Field type="checkbox" name={'remember me'} component={Input}/> remember me
             </div>
+            {console.log("props.error " + props.error)}
+            {props.error &&
+                <div className={style.errorMessage}>
+                    {props.error}
+                </div>
+            }
             <div>
-                <button>Enter</button>
+                <button className={style.dwsSubmit}>Enter</button>
             </div>
         </form>
     )
@@ -46,7 +52,7 @@ const Login = (props) => {
     }
 
     return (
-        <div>
+        <div className={style.container}>
             <h1>LOGIN</h1>
             <ReduxLoginForm onSubmit={onSubmit}/>
         </div>

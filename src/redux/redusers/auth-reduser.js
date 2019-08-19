@@ -1,5 +1,6 @@
 import React from "react";
 import {userApi, profileAPI, authApi} from "../../api/api";
+import {stopSubmit} from "redux-form";
 
 const SET_USER_DATA = 'SET-USER-DATA';
 const SET_USERS_AVATAR = 'SET-USERS-AVATAR';
@@ -60,6 +61,13 @@ export const login = (email, password, rememberMe) => {
         authApi.login(email, password, rememberMe).then(response => {
             if (response.data.resultCode === 0) {
                 dispatch(authorization());
+            } else {
+                //обрабатываем не правильный пароль
+                //передаем название формочки, которую стопаем
+                //вторым параметром ошибку
+                // _error кинет общую ошибку, а не в какое то конкретное поле (login, email)
+                const message = response.length > 0 ? response.data.message : 'Some error';
+                dispatch(stopSubmit('login',{_error: message}));
             }
         });
     }

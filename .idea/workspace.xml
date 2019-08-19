@@ -4,9 +4,9 @@
     <list default="true" id="6752ba4b-1fc9-4138-a737-96288ba32160" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Body/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Login/Login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,15 +52,15 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\redux\redusers" />
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components\Body\Profile" />
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\hoc" />
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\assets\images" />
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components\Body\Dialogs" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\redux\redusers" />
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -119,7 +119,9 @@
       <workItem from="1565972023140" duration="11636000" />
       <workItem from="1566035082010" duration="6122000" />
       <workItem from="1566059630322" duration="3987000" />
-      <workItem from="1566143604153" duration="14552000" />
+      <workItem from="1566143604153" duration="15757000" />
+      <workItem from="1566211804335" duration="2025000" />
+      <workItem from="1566239730392" duration="5195000" />
     </task>
     <servers />
   </component>
