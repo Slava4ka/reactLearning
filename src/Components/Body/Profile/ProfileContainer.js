@@ -11,6 +11,9 @@ class ProfileContainer extends React.Component {
 
     componentDidMount() {
         const userId = (!this.props.match.params.userId) ? this.props.authorizedUserId : this.props.match.params.userId; // тут чекается адресная строка
+        if (!userId) {
+            this.props.history.push('/login');
+        }
         this.props.getProfile(userId);
         this.props.getStatus(userId);
 
@@ -41,7 +44,6 @@ const AuthRedirectComponent = withAuthRedirect(ProfileContainer);
 const withUrlDataContainerComponent = withRouter(AuthRedirectComponent); // Это как третий контейнер (для аякса, для редакса, для взаимодействия с урлом)
 */
 export default compose(connect(mapStateToProps, {getProfile, getStatus, updateStatus}),
-    withRouter,
-    withAuthRedirect
+    withRouter
 )(ProfileContainer)
 

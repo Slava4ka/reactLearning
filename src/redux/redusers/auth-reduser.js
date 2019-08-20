@@ -40,6 +40,7 @@ export const authorization = () => {
             if (data.resultCode === 0) {
 
                 console.log(data);
+
                 dispatch(setAuthUserData(data.data.id, data.data.email, data.data.login, true));
                 profileAPI.getProfile(data.data.id).then(profileData => {
                     if (profileData.photos.small) {
@@ -56,6 +57,27 @@ export const authorization = () => {
     }
 };
 
+export const getAuthUserData = () => (dispatch) => {
+    return userApi.authMe()
+        .then(data => {
+            if (data.resultCode === 0) {
+                let {id, login, email} = data.data;
+                dispatch(setAuthUserData(id, email, login, true));
+            }
+        });
+};
+
+export const getAuthAvatar = (id) => (dispatch) => {
+    profileAPI.getProfile(id).then(profileData => {
+        if (profileData.photos.small) {
+            dispatch(setUsersAvatar(<img src={profileData.photos.small} alt={"small avatar"}/>));
+        } else {
+            dispatch(setUsersAvatar(<img
+                src={'https://cs16planet.ru/images/content/avatars/avatar648.jpg'} alt={"small avatar"}/>));
+        }
+    });
+};
+
 export const login = (email, password, rememberMe) => {
     return (dispatch) => {
         authApi.login(email, password, rememberMe).then(response => {
@@ -67,7 +89,7 @@ export const login = (email, password, rememberMe) => {
                 //вторым параметром ошибку
                 // _error кинет общую ошибку, а не в какое то конкретное поле (login, email)
                 const message = response.length > 0 ? response.data.message : 'Some error';
-                dispatch(stopSubmit('login',{_error: message}));
+                dispatch(stopSubmit('login', {_error: message}));
             }
         });
     }

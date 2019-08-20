@@ -46,5 +46,4 @@ const mapStateToProps = (state) => {
 };
 
 
-export default compose(connect(mapStateToProps, {follow, unfollow, getUsers}),
-    withAuthRedirect)(UsersComponent)
+export default compose(connect(mapStateToProps, {follow, unfollow, getUsers}))(UsersComponent)
