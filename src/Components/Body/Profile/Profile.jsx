@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Profile.module.css'
 import Preloader from "../../common/Preloader/Preloader";
 import ProfileStatus from './ProfileStatu'
+import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
 function Profile(props) {
 
@@ -28,7 +29,7 @@ function Profile(props) {
                         <span><h1>{props.profile.fullName}</h1></span>
                         <span><h5>id: {props.profile.userId}</h5></span>
 
-                        <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+                        <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
 
                         <span><h5>{props.profile.lookingForAJob}</h5></span>
                         <span><h5>{props.profile.lookingForAJobDescription}</h5></span>

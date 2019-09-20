@@ -4,7 +4,6 @@ import {getProfile, getStatus, updateStatus} from '../../../redux/redusers/profi
 import Profile from "./Profile";
 import Preloader from "../../common/Preloader/Preloader";
 import {withRouter} from "react-router-dom";
-import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
 import {compose} from "redux";
 
 class ProfileContainer extends React.Component {

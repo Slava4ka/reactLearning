@@ -5,6 +5,14 @@ import {follow, unfollow, getUsers} from "../../../redux/redusers/users-reduser"
 import {compose} from "redux";
 import {connect} from "react-redux";
 import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
+import {
+    currentPageSelector,
+    followingInProgressSelector,
+    getPageSizeSelector,
+    getUsersSelector, isFetchingSelector,
+    myIdSelector,
+    totalUsersCountSelector
+} from "../../../redux/selectors/users-selectors";
 
 class UsersComponent extends React.Component {
 
@@ -35,6 +43,19 @@ class UsersComponent extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
+        users: getUsersSelector(state),
+        pageSize: getPageSizeSelector(state),
+        totalUsersCount: totalUsersCountSelector(state),
+        currentPage: currentPageSelector(state),
+        isFetching: isFetchingSelector(state),
+        followingInProgress: followingInProgressSelector(state),
+        myId: myIdSelector(state)
+    }
+};
+
+/*
+const mapStateToProps = (state) => {
+    return {
         users: state.usersPage.users,
         pageSize: state.usersPage.pageSize,
         totalUsersCount: state.usersPage.totalUsersCount,
@@ -44,6 +65,6 @@ const mapStateToProps = (state) => {
         myId: state.auth.userId
     }
 };
-
+*/
 
 export default compose(connect(mapStateToProps, {follow, unfollow, getUsers}))(UsersComponent)

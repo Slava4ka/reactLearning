@@ -8,7 +8,12 @@ class ProfileStatus extends React.Component {
     };
 
     activateEditMode = () => {
-        this.setState({
+        /*
+        this.state.editMode = true;
+        this.forceUpdate(); // - насильно перерисовать компоненту
+        */
+
+        this.setState({ // метод из React.Component, переписывает указанные в переданном объете свойства
             editMode: true
         });
     };

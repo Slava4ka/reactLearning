@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6752ba4b-1fc9-4138-a737-96288ba32160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/redusers/app-reduser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileStatusWithHooks.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/selectors/users-selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/News/NewsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/News/NewsContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Posts/Posts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileStatu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileStatu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/HeaderContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Body/Profile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
@@ -123,7 +126,11 @@
       <workItem from="1566059630322" duration="3987000" />
       <workItem from="1566143604153" duration="15757000" />
       <workItem from="1566211804335" duration="2025000" />
-      <workItem from="1566239730392" duration="15302000" />
+      <workItem from="1566239730392" duration="21815000" />
+      <workItem from="1566405688628" duration="6699000" />
+      <workItem from="1566595775007" duration="117000" />
+      <workItem from="1568755820838" duration="8982000" />
+      <workItem from="1568977799715" duration="5072000" />
     </task>
     <servers />
   </component>
