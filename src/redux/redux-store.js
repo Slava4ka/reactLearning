@@ -21,7 +21,7 @@ let redusers = combineReducers(
 );
 
 let store = createStore(redusers, applyMiddleware(thunkMiddleware)); // после этого создастся state с свойствами postPage и dialogsPage...
-
+// все данные из redux идут через Контекст
 
 // потом убрать
 window.store = store;

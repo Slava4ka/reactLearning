@@ -24,6 +24,18 @@ function Navbar() {
             <div className={style.item}>
                 <NavLink to={'/users'} activeClassName={style.activeLink}>Users</NavLink>
             </div>
+
+            <div className={style.item}>
+                <NavLink to={'/store'} activeClassName={style.activeLink}>Store</NavLink>
+            </div>
+
+            <div className={style.item}>
+                <NavLink to={'/papers'} activeClassName={style.activeLink}>Papers</NavLink>
+            </div>
+
+            <div className={style.item}>
+                <NavLink to={'/garbage'} activeClassName={style.activeLink}>Garbage</NavLink>
+            </div>
         </nav>
     )
 }

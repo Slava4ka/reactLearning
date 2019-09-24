@@ -4,11 +4,20 @@
     width: auto;
     grid-template-areas: "h h" "n c";
 
-    grid-template-rows: 60px 1fr;
+    grid-template-rows: minmax(60px, auto) 1fr;
     grid-template-columns: 2fr 10fr;
 }
 
-.content{
+.content {
     grid-area: c;
-    background-color: cornflowerblue;
+    background-color: #fef3ba;
+    border: 1px solid #fec8b0;
+    height: 100vh;
 }
+
+.navbar {
+    grid-area: n;
+    background-color: burlywood;
+    padding: 20px;
+}
+

@@ -2,17 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6752ba4b-1fc9-4138-a737-96288ba32160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileStatusWithHooks.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/selectors/users-selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/1014474865.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/1021028103.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/1022398092.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/1023887020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/6000004255.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Garbage/Garbage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Garbage/Garbage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Garbage/GarbageHOOK.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/News/News.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Papers/Paper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Papers/Papers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Papers/Papers.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Store/Product.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Store/Product.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Store/Shop.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Store/ShopContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/reducers/profile-reduser.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/redusers/shop-reduser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/selectors/shop-selector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/News/NewsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/News/NewsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Posts/Posts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileStatu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Profile/ProfileStatu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/News/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/News/News.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +42,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -43,13 +60,16 @@
   <component name="ProjectId" id="1PEABUTyUbmGJjlnxSMKd4xnUgL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Tests/reducers" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -57,15 +77,17 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\redux\redusers" />
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Tests\reducers" />
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\public" />
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\assets\images" />
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components\Body\Profile" />
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\hoc" />
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\assets\images" />
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components\Body\Dialogs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\public" />
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\redux\redusers" />
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -80,7 +102,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Jest.new post should be added">
+    <configuration name="new post should be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Tests/reducers/profile-reduser.test.js" />
+      <test-names>
+        <test-name value="new post should be added" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -94,6 +142,12 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.new post should be added" />
+        <item itemvalue="Jest.renders without crashing" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -130,7 +184,9 @@
       <workItem from="1566405688628" duration="6699000" />
       <workItem from="1566595775007" duration="117000" />
       <workItem from="1568755820838" duration="8982000" />
-      <workItem from="1568977799715" duration="5072000" />
+      <workItem from="1568977799715" duration="25512000" />
+      <workItem from="1569141676405" duration="20297000" />
+      <workItem from="1569229513366" duration="9010000" />
     </task>
     <servers />
   </component>

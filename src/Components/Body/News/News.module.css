@@ -1,0 +1,16 @@
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.active {
+    background-color: red;
+}
+
+.disconnect{
+    background-color: white;
+}
+
+.color:hover {
+    background-color: #2c536c;
+}

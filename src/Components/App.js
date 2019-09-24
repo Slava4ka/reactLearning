@@ -7,6 +7,9 @@ import PostsContainer from "./Body/Posts/PostsContainer";
 import DialogsContainer from "./Body/Dialogs/DialogsContainer";
 import UsersContainer from "./Body/Users/UsersContainer";
 import ProfileContainer from "./Body/Profile/ProfileContainer";
+import Store from "./Body/Store/Shop";
+import Papers from "./Body/Papers/Papers";
+import Garbage from "./Body/Garbage/GarbageFromTosterRu";
 import Login from "./Body/Login/Login";
 import NewsContainer from "./Body/News/NewsContainer";
 import {connect} from "react-redux";
@@ -29,7 +32,6 @@ class App extends Component {
             console.log(this.props.userId);
             this.props.getAuthAvatar(this.props.userId);
         }
-
     }
 
     render() {
@@ -40,8 +42,12 @@ class App extends Component {
         return (
             <div className="app-wrapper">
                 <HeaderContainer/>
-                <Navbar/>
-                <div className={'app-wrapper-content'}>
+
+                <div className="navbar">
+                    <Navbar/>
+                </div>
+
+                <div className={'content'}>
                     <Route path={'/dialogs'}
                            render={() => (<DialogsContainer/>)}/>
 
@@ -59,6 +65,15 @@ class App extends Component {
 
                     <Route path={'/login'}
                            render={() => (<Login/>)}/>
+
+                    <Route path={'/store'}
+                           render={() => (<Store/>)}/>
+
+                    <Route path={'/papers'}
+                           render={() => (<Papers/>)}/>
+
+                    <Route path={'/garbage'}
+                           render={() => (<Garbage/>)}/>
                 </div>
             </div>
         );

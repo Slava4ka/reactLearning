@@ -1,0 +1,13 @@
+.childComponent{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    text-align: center;
+}
+
+.active{
+    background-color: blueviolet;
+}
+
