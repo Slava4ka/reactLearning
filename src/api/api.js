@@ -25,7 +25,9 @@ export const userApi = {
 
     // убрать пользователя из "друзей"
     unfollow(id) {
-        return instance.delete(`follow/${id}`)
+        return instance.delete(`follow/${id}`).then(response => {
+            return response.data
+        })
     },
 
     // узнать  информацию о текущем пользователе / авторизоваться

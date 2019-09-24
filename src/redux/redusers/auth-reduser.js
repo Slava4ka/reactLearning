@@ -2,8 +2,8 @@ import React from "react";
 import {userApi, profileAPI, authApi} from "../../api/api";
 import {stopSubmit} from "redux-form";
 
-const SET_USER_DATA = 'SET-USER-DATA';
-const SET_USERS_AVATAR = 'SET-USERS-AVATAR';
+const SET_USER_DATA = 'react_test/auth-reduser/SET-USER-DATA';
+const SET_USERS_AVATAR = 'react_test/auth-reduser/SET-USERS-AVATAR';
 
 let initialState = {
     userId: null,

@@ -1,4 +1,4 @@
-const ADD_POST = 'ADD-POST';
+const ADD_POST = 'react_test/posts-reduser/ADD-POST';
 
 function addPost(state, action) {
     const newPost = {id: state.posts.length + 1, message: action.newPostText, likesCount: 0};

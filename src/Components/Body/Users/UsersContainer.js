@@ -4,7 +4,6 @@ import Preloader from "../../common/Preloader/Preloader";
 import {follow, unfollow, getUsers} from "../../../redux/redusers/users-reduser";
 import {compose} from "redux";
 import {connect} from "react-redux";
-import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
 import {
     currentPageSelector,
     followingInProgressSelector,
@@ -65,6 +64,8 @@ const mapStateToProps = (state) => {
         myId: state.auth.userId
     }
 };
+
+ниже укороченный синтаксис
 */
 
 export default compose(connect(mapStateToProps, {follow, unfollow, getUsers}))(UsersComponent)

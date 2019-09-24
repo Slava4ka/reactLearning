@@ -1,8 +1,8 @@
 import {profileAPI} from "../../api/api";
 
-const SET_USERS_PROFILE = "SET-USERS-PROFILE";
-const TOGGLE_IS_FETCHING = "TOGGLE-IS-FETCHING";
-const SET_STATUS = 'SET-STATUS';
+const SET_USERS_PROFILE = 'react_test/profile-reduser/SET-USERS-PROFILE';
+const TOGGLE_IS_FETCHING = 'react_test/profile-reduser/TOGGLE-IS-FETCHING';
+const SET_STATUS = 'react_test/profile-reduser/SET-STATUS';
 
 let initalState = {
     profile: null,

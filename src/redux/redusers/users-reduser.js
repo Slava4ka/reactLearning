@@ -1,13 +1,14 @@
 //AC - action creator
 import {userApi} from "../../api/api";
+import {updateObjectInArray} from "../../utils/object-helpers";
 
-const FOLLOW = "FOLLOW";
-const UNFOLLOW = "UNFOLLOW";
-const SET_USERS = "SET-USERS";
-const SET_CURRENT_PAGE = "SET-CURRENT-PAGE";
-const SET_TOTAL_USERS_COUNT = "SET-TOTAL-USERS-COUNT";
-const TOGGLE_IS_FETCHING = "TOGGLE-IS-FETCHING";
-const TOGGLE_FOLLOWING_IN_PROGRESS = "TOGGLE-FOLLOWING-IN-PROGRESS";
+const FOLLOW = "react_test/users-reduser/FOLLOW";
+const UNFOLLOW = "react_test/users-reduser/UNFOLLOW";
+const SET_USERS = "react_test/users-reduser/SET-USERS";
+const SET_CURRENT_PAGE = "react_test/users-reduser/SET-CURRENT-PAGE";
+const SET_TOTAL_USERS_COUNT = "react_test/users-reduser/SET-TOTAL-USERS-COUNT";
+const TOGGLE_IS_FETCHING = "react_test/users-reduser/TOGGLE-IS-FETCHING";
+const TOGGLE_FOLLOWING_IN_PROGRESS = "react_test/users-reduser/TOGGLE-FOLLOWING-IN-PROGRESS";
 
 let initialState = {
     users: [],
@@ -21,28 +22,16 @@ let initialState = {
 function usersReduser(state = initialState, action) {
     switch (action.type) {
         case FOLLOW:
-            return (
-                {
+            return{
                     ...state,
-                    users: state.users.map(u => {
-                        if (u.id === action.userId) {
-                            return {...u, followed: true}
-                        }
-                        return u
-                    })
-                }
-            );
+                    users: updateObjectInArray(state.users, action.userId, 'id', {followed: true})
+                };
 
         case UNFOLLOW:
             return (
                 {
                     ...state,
-                    users: state.users.map(u => {
-                        if (u.id === action.userId) {
-                            return {...u, followed: false}
-                        }
-                        return u
-                    })
+                    users: updateObjectInArray(state.users, action.userId, 'id', {followed: false})
                 }
             );
 
@@ -114,27 +103,26 @@ export const getUsers = (currentPage, pageSize, firstLoad = true) => {
     }
 };
 
+const followUnfollowFlow = async (dispatch, userId, apiMethod, actionCreator) => {
+    dispatch(toggleFollowingProgress(true, userId));
+
+    const responseData = await apiMethod(userId);
+    if (responseData.resultCode === 0) {
+        dispatch(actionCreator(userId))
+    }
+    dispatch(toggleFollowingProgress(false, userId));
+};
+
+
 export const follow = (id) => {
-    return (dispatch) => {
-        dispatch(toggleFollowingProgress(true, id));
-        userApi.follow(id).then(data => {
-            if (data.resultCode == 0) {
-                dispatch(followAccept(id))
-            }
-            dispatch(toggleFollowingProgress(false, id));
-        });
+    return async (dispatch) => {
+        await followUnfollowFlow(dispatch, id, userApi.follow.bind(userApi), followAccept);
     }
 };
 
 export const unfollow = (id) => {
-    return (dispatch) => {
-        dispatch(toggleFollowingProgress(true, id));
-        userApi.unfollow(id).then(response => {
-            if (response.data.resultCode == 0) {
-                dispatch(unfollowAccept(id))
-            }
-            dispatch(toggleFollowingProgress(false, id));
-        });
+    return async (dispatch) => {
+        await followUnfollowFlow(dispatch, id, userApi.unfollow.bind(userApi), unfollowAccept);
     }
 };
 

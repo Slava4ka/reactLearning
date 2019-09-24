@@ -1,4 +1,4 @@
-const SEND_MESSAGE = 'SEND-MESSAGE';
+const SEND_MESSAGE = 'react_test/dialogs-reduser/SEND-MESSAGE';
 
 function sendMessage(state, action) {
     const message = action.newMessageBody;

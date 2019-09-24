@@ -1,7 +1,7 @@
 import React from "react";
-import {getAuthUserData, authorization} from "./auth-reduser";
+import {getAuthUserData} from "./auth-reduser";
 
-const INITIALIZED_SUCCESS = 'INITIALIZED-SUCCESS';
+const INITIALIZED_SUCCESS = '_react_test/app-reduser/INITIALIZED-SUCCESS';
 
 let initialState = {
     initialized: false

@@ -2,32 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6752ba4b-1fc9-4138-a737-96288ba32160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/1014474865.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/1021028103.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/1022398092.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/1023887020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/6000004255.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Garbage/Garbage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Garbage/Garbage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Garbage/GarbageHOOK.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/News/News.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Papers/Paper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Papers/Papers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Papers/Papers.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Store/Product.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Store/Product.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Store/Shop.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Body/Store/ShopContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/reducers/profile-reduser.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/redusers/shop-reduser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/selectors/shop-selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Body/Users/User.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/common/Pagination/Pagination.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/common/Pagination/Pagination.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/object-helpers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Body/News/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/News/News.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/Users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/app-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/app-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/auth-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/dialogs-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/dialogs-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/posts-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/posts-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/profile-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/profile-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/users-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/users-reduser.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +34,8 @@
       <list>
         <option value="tsconfig.json" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -186,7 +177,7 @@
       <workItem from="1568755820838" duration="8982000" />
       <workItem from="1568977799715" duration="25512000" />
       <workItem from="1569141676405" duration="20297000" />
-      <workItem from="1569229513366" duration="9010000" />
+      <workItem from="1569229513366" duration="18143000" />
     </task>
     <servers />
   </component>
