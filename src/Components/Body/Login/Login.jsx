@@ -4,7 +4,7 @@ import style from './Login.module.css';
 import {Input} from "../../common/FormsControls/FormsControls";
 import {requiredField} from "../../../utils/validators/validator";
 import {connect} from "react-redux";
-import {login} from "../../../redux/redusers/auth-reduser";
+import {login} from "../../../redux/redusers/auth-reducer";
 import {Redirect} from "react-router-dom";
 
 const LoginForm = ({handleSubmit, error}) => {

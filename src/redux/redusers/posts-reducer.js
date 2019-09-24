@@ -26,7 +26,7 @@ let initialState = {
     ],
 };
 
-const postsReduser = (state = initialState, action) => {
+const postsReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST:
             return addPost(state, action);
@@ -40,4 +40,4 @@ export const createAddPostAction = (newPostText) => {
     return {type: ADD_POST, newPostText}
 };
 
-export default postsReduser;
+export default postsReducer;

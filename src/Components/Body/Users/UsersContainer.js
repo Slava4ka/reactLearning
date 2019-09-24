@@ -1,7 +1,7 @@
 import React from 'react';
 import Users from './Users';
 import Preloader from "../../common/Preloader/Preloader";
-import {follow, unfollow, getUsers} from "../../../redux/redusers/users-reduser";
+import {follow, unfollow, getUsers} from "../../../redux/redusers/users-reducer";
 import {compose} from "redux";
 import {connect} from "react-redux";
 import {

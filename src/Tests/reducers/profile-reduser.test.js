@@ -1,5 +1,5 @@
 import React from 'react';
-import postsReduser, {createAddPostAction} from "../../redux/redusers/posts-reduser";
+import postsReducer, {createAddPostAction} from "../../redux/redusers/posts-reducer";
 
 // название теста, колбек того что тестируем
 
@@ -18,7 +18,7 @@ it('new post should be added', () => {
     };
 
     /// 2. test action
-    let newState = postsReduser(state, action);
+    let newState = postsReducer(state, action);
 
     // 3. expectation
     expect(newState.posts.length).toBe(5);

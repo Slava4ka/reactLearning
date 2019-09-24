@@ -14,9 +14,9 @@ import Login from "./Body/Login/Login";
 import NewsContainer from "./Body/News/NewsContainer";
 import {connect} from "react-redux";
 import {compose} from "redux";
-import {initializeApp} from "../redux/redusers/app-reduser";
+import {initializeApp} from "../redux/redusers/app-reducer";
 import Preloader from "./common/Preloader/Preloader";
-import {getAuthAvatar} from "../redux/redusers/auth-reduser";
+import {getAuthAvatar} from "../redux/redusers/auth-reducer";
 
 // <Route path={'/profile/:userId?'} - вопросительный знак делает этот параметр функциональным
 // Конвертировать в классовую компоненту ctrl + alt + shift + T

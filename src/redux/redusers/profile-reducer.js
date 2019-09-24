@@ -10,7 +10,7 @@ let initalState = {
     status: ''
 };
 
-function profileReduser(state = initalState, action) {
+function profileReducer(state = initalState, action) {
     switch (action.type) {
         case SET_USERS_PROFILE: {
             return {...state, profile: action.profile}
@@ -56,4 +56,4 @@ export const updateStatus = (status) => (dispach) => {
     });
 };
 
-export default profileReduser;
+export default profileReducer;

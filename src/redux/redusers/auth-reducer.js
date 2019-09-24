@@ -15,7 +15,7 @@ let initialState = {
 };
 
 
-const authReduser = (state = initialState, action) => {
+const authReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_USER_DATA: {
             return {...state, ...action.data}
@@ -105,4 +105,4 @@ export const logOut = () => dispatch => {
     });
 };
 
-export default authReduser;
+export default authReducer;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Posts from './Posts'
-import {createAddPostAction} from "../../../redux/redusers/posts-reduser";
+import {createAddPostAction} from "../../../redux/redusers/posts-reducer";
 import {connect} from "react-redux";
 
 const mapStateToProps = (state) => {
