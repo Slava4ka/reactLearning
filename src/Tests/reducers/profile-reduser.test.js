@@ -21,7 +21,8 @@ it('new post should be added', () => {
     let newState = postsReducer(state, action);
 
     // 3. expectation
-    expect(newState.posts.length).toBe(5);
+    expect(newState.posts.length).toBe(6
+    );
 });
 
 

@@ -1,4 +1,4 @@
-import {applyMiddleware, combineReducers, createStore} from "redux";
+import {applyMiddleware, combineReducers, compose, createStore} from "redux";
 import postsReducer from "./redusers/posts-reducer";
 import dialogsReducer from "./redusers/dialogs-reducer";
 import usersReducer from "./redusers/users-reducer";
@@ -8,7 +8,7 @@ import appReducer from "./redusers/app-reducer";
 import thunkMiddleware from 'redux-thunk';
 import {reducer as formReducer} from 'redux-form'
 
-let redusers = combineReducers(
+let reducers = combineReducers(
     {
         postsPage: postsReducer, //каждому свойтву из store соответствуеь свой редьюсер
         dialogsPage: dialogsReducer,
@@ -20,10 +20,12 @@ let redusers = combineReducers(
     }
 );
 
-let store = createStore(redusers, applyMiddleware(thunkMiddleware)); // после этого создастся state с свойствами postPage и dialogsPage...
+// Добавил composeEnhancers для работы приложения Redux dev tools
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+let store = createStore(reducers, composeEnhancers(applyMiddleware(thunkMiddleware))); // после этого создастся state с свойствами postPage и dialogsPage...
 // все данные из redux идут через Контекст
 
-// потом убрать
-window.store = store;
+// потом убрать. Это для доступа к стору из консоли
+window.__store__ = store;
 
 export default store

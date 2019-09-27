@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Navbar from '../Components/Navbar/Navbar';
-import {Route, withRouter} from "react-router-dom";
+import {BrowserRouter, Route, withRouter} from "react-router-dom";
 import HeaderContainer from '../Components/Header/HeaderContainer';
 import PostsContainer from "./Body/Posts/PostsContainer";
 import DialogsContainer from "./Body/Dialogs/DialogsContainer";
@@ -12,11 +12,12 @@ import Papers from "./Body/Papers/Papers";
 import Garbage from "./Body/Garbage/GarbageFromTosterRu";
 import Login from "./Body/Login/Login";
 import NewsContainer from "./Body/News/NewsContainer";
-import {connect} from "react-redux";
+import {connect, Provider} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "../redux/redusers/app-reducer";
 import Preloader from "./common/Preloader/Preloader";
 import {getAuthAvatar} from "../redux/redusers/auth-reducer";
+import store from "../redux/redux-store";
 
 // <Route path={'/profile/:userId?'} - вопросительный знак делает этот параметр функциональным
 // Конвертировать в классовую компоненту ctrl + alt + shift + T
@@ -85,5 +86,15 @@ const mapStateToProps = (state) => ({
     userId: state.auth.userId
 });
 
-export default compose(withRouter,
+const AppContainer = compose(withRouter,
     (connect(mapStateToProps, {initializeApp, getAuthAvatar})))(App);
+
+const AppDone = (props) => {
+    return (<BrowserRouter>
+        <Provider store={store}>
+            <AppContainer/>
+        </Provider>
+    </BrowserRouter>)
+};
+
+export default AppDone;

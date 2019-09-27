@@ -22,7 +22,16 @@ function Navbar() {
             </div>
 
             <div className={style.item}>
-                <NavLink to={'/users'} activeClassName={style.activeLink}>Users</NavLink>
+                <NavLink activeClassName={style.activeLink}>Users</NavLink>
+                <ul className={style.usersNotPressed}>
+                    <li>
+                        <NavLink to={'/users/users_list'} activeClassName={style.activeLink}>Users List</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={'/users/my_friends'} activeClassName={style.activeLink}>Friends</NavLink>
+                    </li>
+                </ul>
+
             </div>
 
             <div className={style.item}>
