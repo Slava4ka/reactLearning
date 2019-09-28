@@ -4,10 +4,11 @@ import Pagination from '../../common/Pagination/Pagination'
 
 const Users = (props) => {
     return <div>
-        <Pagination totalUsersCount={props.totalUsersCount}
+        <Pagination totalItemsCount={props.totalUsersCount}
                     pageSize={props.pageSize}
                     onPageChanged={props.onPageChanged}
                     currentPage={props.currentPage}
+                    portionSize={props.paginatorPortionSize}
         />
 
         <div>

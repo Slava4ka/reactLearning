@@ -13,6 +13,7 @@ const TOGGLE_FOLLOWING_IN_PROGRESS = "react_test/users-reduser/TOGGLE-FOLLOWING-
 let initialState = {
     users: [],
     pageSize: 20,
+    paginatorPortionSize: 10,
     totalUsersCount: 21,
     currentPage: 1,
     isFetching: true,

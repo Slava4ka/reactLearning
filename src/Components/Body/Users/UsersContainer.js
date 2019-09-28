@@ -10,7 +10,7 @@ import {
     getPageSizeSelector,
     getUsersSelector, isFetchingSelector,
     myIdSelector,
-    totalUsersCountSelector
+    totalUsersCountSelector, paginatorPortionSizeSelector
 } from "../../../redux/selectors/users-selectors";
 
 class UsersComponent extends React.Component {
@@ -30,6 +30,7 @@ class UsersComponent extends React.Component {
             <Users totalUsersCount={this.props.totalUsersCount}
                    pageSize={this.props.pageSize}
                    currentPage={this.props.currentPage}
+                   paginatorPortionSize={this.props.paginatorPortionSize}
                    onPageChanged={this.onPageChanged}
                    users={this.props.users}
                    follow={this.props.follow}
@@ -44,6 +45,7 @@ const mapStateToProps = (state) => {
     return {
         users: getUsersSelector(state),
         pageSize: getPageSizeSelector(state),
+        paginatorPortionSize: paginatorPortionSizeSelector(state),
         totalUsersCount: totalUsersCountSelector(state),
         currentPage: currentPageSelector(state),
         isFetching: isFetchingSelector(state),

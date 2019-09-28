@@ -4,7 +4,6 @@ import Navbar from '../Components/Navbar/Navbar';
 import {BrowserRouter, Route, withRouter} from "react-router-dom";
 import HeaderContainer from '../Components/Header/HeaderContainer';
 import PostsContainer from "./Body/Posts/PostsContainer";
-import DialogsContainer from "./Body/Dialogs/DialogsContainer";
 import UsersContainer from "./Body/Users/UsersContainer";
 import ProfileContainer from "./Body/Profile/ProfileContainer";
 import Store from "./Body/Store/Shop";
@@ -18,9 +17,15 @@ import {initializeApp} from "../redux/redusers/app-reducer";
 import Preloader from "./common/Preloader/Preloader";
 import {getAuthAvatar} from "../redux/redusers/auth-reducer";
 import store from "../redux/redux-store";
+import {withLazySuspense} from "../hoc/withLazySuspence";
+
+// lazy импорт, импортируется только когда надо
+const DialogsContainer = React.lazy(() => import('./Body/Dialogs/DialogsContainer'));
 
 // <Route path={'/profile/:userId?'} - вопросительный знак делает этот параметр функциональным
 // Конвертировать в классовую компоненту ctrl + alt + shift + T
+
+//28.09.2019 lesson 94 - сделал из DialogsContainer lazy
 
 class App extends Component {
 
@@ -50,7 +55,9 @@ class App extends Component {
 
                 <div className={'content'}>
                     <Route path={'/dialogs'}
-                           render={() => (<DialogsContainer/>)}/>
+                        // ленивая загрузка реализована через HOC. Но можно делать и явно. В документации все подробно
+                        // описано. Поймет и дебил. Так же можно обрабатывать и отлавливать ошибки.
+                           render={withLazySuspense(DialogsContainer)}/>
 
                     <Route path={'/profile/:userId?'}
                            render={() => (<ProfileContainer/>)}/>

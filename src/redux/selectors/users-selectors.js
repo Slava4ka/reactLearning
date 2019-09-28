@@ -30,6 +30,10 @@ export const currentPageSelector = (state) => {
     return state.usersPage.currentPage
 };
 
+export const paginatorPortionSizeSelector = (state) => {
+    return state.usersPage.paginatorPortionSize
+};
+
 export const isFetchingSelector = (state) => {
     return state.usersPage.isFetching
 };

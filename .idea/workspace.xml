@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6752ba4b-1fc9-4138-a737-96288ba32160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Tests/components/profileStatus.test.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withLazySuspence.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Body/Users/UsersContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/reducers/profile-reduser.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/reducers/profile-reduser.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/common/Pagination/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Pagination/Pagination.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/common/Pagination/Pagination.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/common/Pagination/Pagination.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redusers/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redusers/users-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/selectors/users-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors/users-selectors.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +218,7 @@
       <workItem from="1569141676405" duration="20297000" />
       <workItem from="1569229513366" duration="18959000" />
       <workItem from="1569360709138" duration="3257000" />
-      <workItem from="1569605394849" duration="13086000" />
+      <workItem from="1569605394849" duration="19525000" />
     </task>
     <servers />
   </component>
@@ -238,17 +237,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Tests/components/profileStatus.test.jsx</url>
-          <line>57</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

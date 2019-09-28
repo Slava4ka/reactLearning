@@ -23,7 +23,7 @@ function Navbar() {
 
             <div className={style.item}>
                 <NavLink activeClassName={style.activeLink}>Users</NavLink>
-                <ul className={style.usersNotPressed}>
+                <ul className={style.usersPressed}>
                     <li>
                         <NavLink to={'/users/users_list'} activeClassName={style.activeLink}>Users List</NavLink>
                     </li>
