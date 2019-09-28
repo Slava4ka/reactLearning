@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6752ba4b-1fc9-4138-a737-96288ba32160" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,17 +52,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\public" />
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\redux\redusers" />
+      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Tests\reducers" />
       <recent name="C:\Users\Slava\WebstormProjects\react_test\public" />
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\assets\images" />
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components\Body\Profile" />
       <recent name="C:\Users\Slava\WebstormProjects\react_test\src\hoc" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\public" />
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\redux\redusers" />
-      <recent name="C:\Users\Slava\WebstormProjects\react_test\src\Components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -211,7 +209,7 @@
       <workItem from="1569141676405" duration="20297000" />
       <workItem from="1569229513366" duration="18959000" />
       <workItem from="1569360709138" duration="3257000" />
-      <workItem from="1569605394849" duration="21815000" />
+      <workItem from="1569605394849" duration="22230000" />
     </task>
     <servers />
   </component>
