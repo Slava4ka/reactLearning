@@ -1,8 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import style from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
 
 function Navbar() {
+
+    const [convolute, setConvolute] = useState(false);
+
+    const UsersBoxVisibility = () => {
+        setConvolute(!convolute)
+    };
+
+    const styleOfUsersBox = convolute ? style.usersPressed : style.usersNotPressed;
+
     return (
         <nav className={style.nav}>
             <div className={style.item}>
@@ -22,8 +31,8 @@ function Navbar() {
             </div>
 
             <div className={style.item}>
-                <NavLink activeClassName={style.activeLink}>Users</NavLink>
-                <ul className={style.usersPressed}>
+                <NavLink to={'/users'} activeClassName={style.activeLink} onClick={UsersBoxVisibility}>Users</NavLink>
+                <ul className={styleOfUsersBox}>
                     <li>
                         <NavLink to={'/users/users_list'} activeClassName={style.activeLink}>Users List</NavLink>
                     </li>

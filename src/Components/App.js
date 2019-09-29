@@ -97,7 +97,7 @@ const AppContainer = compose(withRouter,
     (connect(mapStateToProps, {initializeApp, getAuthAvatar})))(App);
 
 const AppDone = (props) => {
-    return (<BrowserRouter>
+    return (<BrowserRouter basename={process.env.PUBLIC_URL}>
         <Provider store={store}>
             <AppContainer/>
         </Provider>
