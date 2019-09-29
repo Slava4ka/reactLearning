@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/reactLearning/static/css/main.94191336.chunk.css",
-    "main.js": "/reactLearning/static/js/main.45ce1c8a.chunk.js",
-    "main.js.map": "/reactLearning/static/js/main.45ce1c8a.chunk.js.map",
-    "runtime~main.js": "/reactLearning/static/js/runtime~main.9aa820a9.js",
-    "runtime~main.js.map": "/reactLearning/static/js/runtime~main.9aa820a9.js.map",
-    "static/js/2.ed712948.chunk.js": "/reactLearning/static/js/2.ed712948.chunk.js",
-    "static/js/2.ed712948.chunk.js.map": "/reactLearning/static/js/2.ed712948.chunk.js.map",
+    "main.css": "/reactLearning/static/css/main.d1338146.chunk.css",
+    "main.js": "/reactLearning/static/js/main.5edf62fe.chunk.js",
+    "main.js.map": "/reactLearning/static/js/main.5edf62fe.chunk.js.map",
+    "runtime~main.js": "/reactLearning/static/js/runtime~main.3d26f339.js",
+    "runtime~main.js.map": "/reactLearning/static/js/runtime~main.3d26f339.js.map",
+    "static/js/2.1d0c7f27.chunk.js": "/reactLearning/static/js/2.1d0c7f27.chunk.js",
+    "static/js/2.1d0c7f27.chunk.js.map": "/reactLearning/static/js/2.1d0c7f27.chunk.js.map",
     "static/css/3.09a4aeb5.chunk.css": "/reactLearning/static/css/3.09a4aeb5.chunk.css",
-    "static/js/3.a779123d.chunk.js": "/reactLearning/static/js/3.a779123d.chunk.js",
-    "static/js/3.a779123d.chunk.js.map": "/reactLearning/static/js/3.a779123d.chunk.js.map",
+    "static/js/3.613f3d94.chunk.js": "/reactLearning/static/js/3.613f3d94.chunk.js",
+    "static/js/3.613f3d94.chunk.js.map": "/reactLearning/static/js/3.613f3d94.chunk.js.map",
     "index.html": "/reactLearning/index.html",
-    "precache-manifest.96cedab3d96ae52224c8182446ae8ae5.js": "/reactLearning/precache-manifest.96cedab3d96ae52224c8182446ae8ae5.js",
+    "precache-manifest.64d54a8b07b0da45d96c3bd2d82e1c3d.js": "/reactLearning/precache-manifest.64d54a8b07b0da45d96c3bd2d82e1c3d.js",
     "service-worker.js": "/reactLearning/service-worker.js",
     "static/css/3.09a4aeb5.chunk.css.map": "/reactLearning/static/css/3.09a4aeb5.chunk.css.map",
-    "static/css/main.94191336.chunk.css.map": "/reactLearning/static/css/main.94191336.chunk.css.map",
+    "static/css/main.d1338146.chunk.css.map": "/reactLearning/static/css/main.d1338146.chunk.css.map",
     "static/media/Spin-1s-200px.svg": "/reactLearning/static/media/Spin-1s-200px.b5a19a3a.svg"
   }
 }
